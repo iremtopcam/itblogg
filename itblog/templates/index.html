@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class= "jumbotron text-center">
+    <h3> iremin kisisel bloguna hosgeldiniz burada platformda yazilarimi paylasacağim </h3>
+    <p> bu blogda yazılarınızı paylasmak isterseniz benimle iletisim kurabilirsiniz </p>
+    
+</div>
+<ul> 
+    {% for article in articles %}
+
+    <li>Article id {{article.id}} - title {{article.title}} -content: {{article.content}} </li>  
+
+    
+    {% endfor %}
+
+
+
+
+</ul>
+
+
+
+
+
+{% endblock  %}
